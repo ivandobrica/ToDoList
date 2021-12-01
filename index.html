@@ -12,18 +12,20 @@
     <title>Todo List</title>
 </head>
 <body>
-    <header>
-        <h1>Todo List</h1>
+    <header class="header">
+        <h1 class="header__title">Todo List</h1>
     </header>
 
-    <form>
-        <input type="text" class="todo__input">
-        <button class="todo__button" type="submit">
-            <i class="fas fa-plus-square"></i>
-        </button>
+    <form class="form">
+        <div class="form__input-container">
+            <input type="text" class="form__input">
+            <button class="form__button" type="submit">
+                <i class="fas fa-plus-square"></i>
+            </button>
+        </div>
 
         <div class="select">
-            <select name="todos" class="filter-todo">
+            <select name="todos" class="select__filter">
                 <option value="all">All</option>
                 <option value="completed">Completed</option>
                 <option value="uncompleted">Uncompleted</option>
